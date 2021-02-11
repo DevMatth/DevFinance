@@ -113,7 +113,7 @@ const Utils = {
     formatAmount(value) {
         value = value.replace(/\,?\.?/g, "")
 
-        value = value * 100
+        value = value
         return Math.round(value)
     },
 
