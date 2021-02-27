@@ -146,7 +146,6 @@ button:hover {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: rgba(156, 155, 155, 0.781);
-    cursor: pointer;
 }
 
 table thead tr th:first-child,

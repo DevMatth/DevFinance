@@ -3,7 +3,7 @@
     --dark-red: rgb(70, 3, 3);
 }
 * {
-    box-sizing: border-box; ;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -17,7 +17,26 @@ body {
 header {
     background: rgb(111, 47, 47);
     text-align: center;
-    padding: 1rem 0 10rem 0;
+    padding: 0 0 10rem 0;
+}
+
+
+#balance {
+    margin-top: -10rem; 
+}
+
+.card {
+    background: white;
+    padding: 0.1rem 1rem 0 1rem;
+    margin: 0.5rem 0 0 1rem;
+    width: min(80vw, 200px);
+    border-radius: 3px;
+    opacity: 0.95;
+    color: var(--dark-red);
+
+}
+.card:hover {
+    opacity: 1;
 }
 
 .card h3 {
@@ -37,27 +56,6 @@ header {
     justify-content: space-between;
 }
 
-h1 {
-    font-weight: 100;
-}
-
-#balance {
-    margin-top: -10rem;
-}
-
-.card {
-    background: white;
-    padding: 0.25rem 0 0 0;
-    margin: 0.5rem 0 0 1rem;
-    width: min(90vw, 250px);
-    border-radius: 3px;
-    opacity: 0.95;
-    color: var(--dark-red);
-
-}
-.card:hover {
-    opacity: 1;
-}
 .card.total {
     background: rgb(151, 151, 151);
     color: white;
@@ -74,6 +72,11 @@ h1 {
     border-width: 0;
 }
 
+#transactions {
+    margin: -12rem 20rem;
+}
+}
+
 /* footer ================================*/
 
 footer {
@@ -81,4 +84,22 @@ footer {
     padding: 4rem 0 2rem;
     color: var(--dark-red);
     opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 70.25%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        
+        
+    }
+    .card {
+        width: min(50vw, 150px);
+        height: min(14vw, 60px);
+        gap: 1rem;
+    }
 }
